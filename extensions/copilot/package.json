@@ -3202,6 +3202,14 @@
             "default": true,
             "markdownDescription": "%github.copilot.config.cloudAgent.enabled%"
           },
+          "github.copilot.chat.localIndex.enabled": {
+            "type": "boolean",
+            "default": true,
+            "markdownDescription": "%github.copilot.config.localIndex.enabled%",
+            "tags": [
+              "onExp"
+            ]
+          },
           "github.copilot.chat.codeGeneration.useInstructionFiles": {
             "type": "boolean",
             "default": true,
@@ -4313,15 +4321,6 @@
             "markdownDescription": "%github.copilot.config.exploreAgent.model%",
             "tags": [
               "experimental"
-            ]
-          },
-          "github.copilot.chat.localIndex.enabled": {
-            "type": "boolean",
-            "default": false,
-            "markdownDescription": "%github.copilot.config.localIndex.enabled%",
-            "tags": [
-              "experimental",
-              "onExp"
             ]
           },
           "github.copilot.chat.conversationCompaction.usePrismCompaction": {
@@ -7211,7 +7210,7 @@
     "@anthropic-ai/claude-agent-sdk": "0.2.112",
     "@anthropic-ai/sdk": "^0.82.0",
     "@github/blackbird-external-ingest-utils": "^0.3.0",
-    "@github/copilot": "^1.0.67",
+    "@github/copilot": "^1.0.69-0",
     "@google/genai": "^1.22.0",
     "@humanwhocodes/gitignore-to-minimatch": "1.0.2",
     "@microsoft/tiktokenizer": "^1.0.10",
